@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script src="js/datos.js" defer></script> <!-- Defer para no usar window.onload, PREGUNTARLO -->
+<script src="js/carrito.js" defer></script>
+<script src="js/tienda.js" defer></script>
+
+<body>
+    <div class="menu">
+        <div class="carrito-div">
+            <a href="#" id="open-cart-btn"><img width="50" src="images/carrito-de-compras.png" alt=""></a>
+        </div>
+        <div class="order-options">
+            <select id="order-selector">
+            </select>
+        </div>
+    </div>
+    <div class="movies-list">
+    </div>
+
+    <!-- Modal structure -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="title-modal">
+                <h2>Carrito de Compras</h2>
+            </div>
+            <div class="cart-list"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

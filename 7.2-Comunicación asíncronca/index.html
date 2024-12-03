@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Artículos</h1>
+    <!--Botón para añadir artículo-->
+    <button class="addButton">Añadir artículo</button>
+    <!-- Contenedor para generar artículos-->
+    <div class="articulos"></div>
+    <!--Modal al pulsar añadir artículo-->
+    <dialog id="miDialogo">
+        <div id="dialogHead">
+            <h2> Añadir artículo <span id="idPedido" class="h5"></span></h2>
+        </div>
+        <div id="dialogContent">
+            <form id="articuloForm">
+                <label for="id">Introduce el ID:</label>
+                <input class="id" type="text">
+                <label for="nombre">Introduce el NOMBRE:</label>
+                <input class="nombre" type="text">
+                <label for="precio">Introduce el PRECIO:</label>
+                <input class="precio" type="text">
+            </form>
+        </div>
+        <div class="text-center">
+            <!--Botones para cerrar modal y agregar el artículo-->
+            <button id="btnCierraDialog" class="btn btn-secondary">Cerrar</button>
+            <button id="createBtn" type="button" form="articuloForm">Nuevo artículo</button>
+        </div>
+    </dialog>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
